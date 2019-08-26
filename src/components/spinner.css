@@ -1,0 +1,47 @@
+.spinner {
+    position: absolute;
+    width: fit-content;
+    width: -moz-max-content;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dot {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin: 10px;
+  animation-name: pop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.dot2 {
+    animation-delay: 0.5s
+}
+.dot3 {
+    animation-delay: 1s
+}
+.one {
+    position: absolute;
+    width: 8px;
+    left: 4px;
+    height: 16px;
+    background-color: black;
+}
+.two {
+    position: absolute;
+    width: 16px;
+    top: 4px;
+    left: 0;
+    height: 8px;
+    background-color: black;
+}
+
+@keyframes pop {
+    from {transform: scale(1);}
+    to {transform: scale(2);}
+}
